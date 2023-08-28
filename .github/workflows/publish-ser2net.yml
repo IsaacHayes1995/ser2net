@@ -27,7 +27,7 @@ jobs:
         with:
           push: true
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6
-          tags: jbouwh/ser2net:latest
+          tags: isaachayes1995/ser2net:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
