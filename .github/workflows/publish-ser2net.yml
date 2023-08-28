@@ -1,8 +1,10 @@
 name: Build and upload Docker image ser2net
 
+concurrency: production  # Ensure only one workflow runs at a time
 on:
-  release:
-    types: [created, edited]
+  push:
+    branches:
+      - master
 
 jobs:
   docker:
