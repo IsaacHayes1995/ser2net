@@ -1,5 +1,5 @@
 connection: &id001
   accepter: tcp,5030
   connector: serialdev,
-    /dev/serial0,
+    /dev/ttys0,
     115200N81,local
